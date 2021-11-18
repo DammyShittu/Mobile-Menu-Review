@@ -1,6 +1,6 @@
 const mobileMenu = document.getElementById('menu');
 const close = document.querySelector('.close');
-const body = document.querySelector('body');
+const body = document.getElementById('page-body');
 const hamburger = document.querySelector('.menu-bars');
 const mobileMenuLinks = document.querySelectorAll('.classList');
 
