@@ -9,10 +9,10 @@
 
 Width - 375px
 
-![Mobile view](./screenshoot.png)
+![Mobile view](./screenshot.png)
 
 
-![Open Mobile Menu](./screenshoot2.png)
+![Open Mobile Menu](./screenshot2.png)
 
 # This project was built with:
 
