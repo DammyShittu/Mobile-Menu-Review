@@ -18,16 +18,109 @@ hr {
   width: 80vw;
 }
 
+header,
+.mobile-menu {
+  background-color: #3c3a39;
+}
+
+.mobile-menu {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: -110%;
+  left: 0;
+  z-index: 100;
+  transition: 500ms ease-in;
+}
+
+.mobile-menu ul {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+li {
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 43px;
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+}
+
+.card-stacks li {
+  background: rgba(255, 255, 255, 0.24) !important;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.project-stacks li {
+  display: inline;
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
+  background: transparent;
+  color: #fff;
+  transition: 350ms;
+  cursor: pointer;
+}
+
+.mobile-menu ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px auto;
+  z-index: 999;
+  text-align: left;
+  border-bottom: 1px solid #979797a3;
+}
+
+.close,
+.mobile-menu ul li a {
+  transition: 300ms ease-in-out;
+}
+
+.mobile-menu ul li a {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.mobile-menu ul li a:hover {
+  opacity: 0.7;
+  transform: scale(0.95);
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 3;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+}
+
+.close:hover {
+  transform: rotate(180deg);
+  opacity: 0.8;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  background-color: #3c3a39;
   color: white;
 }
 
-#desktop-nav, #desktop-nav ul {
+#desktop-nav,
+#desktop-nav ul {
   display: none;
 }
 
@@ -227,24 +320,6 @@ main {
   right: 0;
 }
 
-li {
-  list-style: none;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 43px;
-  text-align: center;
-  color: #fff;
-  padding: 5px;
-}
-
-.card-stacks li {
-  background: rgba(255, 255, 255, 0.24) !important;
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-}
-
 .gtime {
   background-image: url("../media/png/gtime.png");
 }
@@ -266,16 +341,6 @@ li {
   flex-wrap: wrap;
   grid-gap: 15px;
   padding: 20px 0;
-}
-
-.project-stacks li {
-  display: inline;
-  border: 1px solid #8993a4;
-  padding: 10px 12px;
-  background: transparent;
-  color: #fff;
-  transition: 350ms;
-  cursor: pointer;
 }
 
 .project-stacks li:hover {
