@@ -17,5 +17,7 @@ const closeMenu = () => {
 close.addEventListener('click', closeMenu);
 
 mobileMenuLinks.forEach((link) => {
-  link.addEventListener('click', closeMenu);
+  link.addEventListener('click', () => {
+    body.style.position = 'static';
+  });
 });
